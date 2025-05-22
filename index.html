@@ -1,216 +1,226 @@
-<!DOCTYPE html><html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shree Kumawat Stone Industries</title>
-  <link rel="stylesheet" href="style.css">
   <style>
-    /* General Reset */
-    * {
+    body {
       margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f9f9f9;
-  padding: 0 20px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }header {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 1rem 0;
 }
 
-header {
+.logo {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
-  background-color: #3a5161;
-  color: #fff;
+  justify-content: center;
 }
 
 .logo img {
-  width: 120px;
+  max-width: 50px;
+  margin-right: 10px;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-.hero {
-  padding: 30px 10px;
-}
-
-.hero h1 {
-  font-size: 2rem;
-}
-
-.hero p {
-  font-size: 1rem;
-}
-#products, #testimonials, #about, #contact {
-  margin: 50px 0;
-}
-
-#products h2, #testimonials h2, #about h2, #contact h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.product-grid {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.product-card {
-  background: #fff;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  max-width: 300px;
-}
-
-.product-card img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.product-card h3 {
-  margin: 15px 0;
+.logo h1 {
   font-size: 1.5rem;
 }
 
-#testimonials .testimonial {
-  background: #fff;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  margin: 20px auto;
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
-#about p {
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background-image: url('path-to-your-bg-image.jpg'); /* Replace with your background image path */
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
   text-align: center;
-  margin: 0 auto;
-  max-width: 700px;
 }
 
-#contact form {
+.hero p {
+  color: #ccc;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+section {
+  padding: 2rem 1rem;
+}
+
+.products, .testimonials, .reviews, .about, .contact {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.products h2, .testimonials h2, .reviews h2, .about h2, .contact h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.products .product {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.product-card {
+  flex: 0 0 48%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.testimonials blockquote, .reviews blockquote {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-left: 5px solid #2c3e50;
+  margin: 1rem 0;
+}
+
+.about p {
+  text-align: justify;
+}
+
+.contact form {
   display: flex;
   flex-direction: column;
   max-width: 500px;
   margin: 0 auto;
 }
 
-#contact form input, #contact form textarea, #contact form button {
-  padding: 10px;
+.contact input, .contact textarea, .contact button {
   margin: 10px 0;
+  padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
 }
 
-#contact form button {
-  background-color: #3a5161;
+.contact button {
+  background: #2c3e50;
   color: #fff;
-  font-size: 1rem;
+  border: none;
   cursor: pointer;
 }
 
-footer {
-  text-align: center;
-  padding: 20px 0;
-  background-color: #3a5161;
-  color: #fff;
-  margin-top: 20px;
+.contact button:hover {
+  background: #34495e;
 }
 
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
+footer {
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
 
-  nav ul li {
-    margin: 10px 0;
-  }
-
-  .product-card {
-    max-width: 90%;
-  }
-
- 
   </style>
-</head>
-<body>
+</head><body>
   <header>
     <div class="logo">
-      <img src="logo.png" alt="Shree Kumawat Stone Industries">
+      <img src="path-to-logo.png" alt="Logo"> <!-- Replace with your logo path -->
+      <h1>Shree Kumawat Stone Industries</h1>
     </div>
     <nav>
-      <ul>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <a href="#products">Products</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+      <a href="#testimonials">Testimonials</a>
     </nav>
   </header>  <section class="hero">
-    <h1>Top-Quality Kota Stones Delivered Nationwide</h1>
-    <p>Discover the perfect stone solutions for your projects.</p>
-  </section>  <section id="products">
+    <div class="hero-overlay">
+      <div class="container">
+        <h1>Top-Quality Kota Stones Delivered Nationwide</h1>
+        <p>Discover the perfect stone solutions for your projects.</p>
+      </div>
+    </div>
+  </section>  <section id="products" class="products">
     <h2>Our Products</h2>
-    <div class="product-grid">
+    <div class="product">
       <div class="product-card">
-        <img src="images/product1.jpg" alt="Kota Blue Stone">
         <h3>Kota Blue Stone</h3>
         <p>Durable and perfect for flooring and wall cladding.</p>
-        <p>₹48/sq.ft</p>
+        <p><strong>₹48/sq.ft</strong></p>
       </div>
       <div class="product-card">
-        <img src="images/product2.jpg" alt="Kota Brown Stone">
         <h3>Kota Brown Stone</h3>
         <p>Natural texture and ideal for heavy-duty applications.</p>
-        <p>₹54/sq.ft</p>
+        <p><strong>₹54/sq.ft</strong></p>
       </div>
     </div>
-  </section>  <section id="testimonials">
+  </section>  <section id="testimonials" class="testimonials">
     <h2>Testimonials</h2>
-    <div class="testimonial">
+    <blockquote>
       <p>"The quality of the stones from Shree Kumawat Stone Industries is unmatched. Our clients are very satisfied!"</p>
-      <p>- Rajesh Sharma, Architect</p>
-    </div>
-    <div class="testimonial">
+      <cite>- Rajesh Sharma, Architect</cite>
+    </blockquote>
+    <blockquote>
       <p>"Timely delivery and excellent customer service. Highly recommended!"</p>
-      <p>- Meera Patel, Contractor</p>
-    </div>
-  </section>  <section id="about">
+      <cite>- Meera Patel, Contractor</cite>
+    </blockquote>
+  </section>  <section class="reviews">
+    <h2>Customer Reviews</h2>
+    <blockquote>
+      <p>"Fantastic range of products and professional service."</p>
+      <cite>- Kunal Verma</cite>
+    </blockquote>
+    <blockquote>
+      <p>"Highly durable and affordable stones. Will buy again."</p>
+      <cite>- Sneha Roy</cite>
+    </blockquote>
+    <blockquote>
+      <p>"Great experience working with Shree Kumawat Stone Industries!"</p>
+      <cite>- Alok Tiwari</cite>
+    </blockquote>
+  </section>  <section id="about" class="about">
     <h2>About Us</h2>
     <p>Shree Kumawat Stone Industries has been serving the construction industry for over a decade. Specializing in premium quality Kota stones for both residential and commercial projects.</p>
-  </section>  <section id="contact">
+  </section>  <section id="contact" class="contact">
     <h2>Contact Us</h2>
     <form>
       <input type="text" placeholder="Your Name" required>
       <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
       <button type="submit">Submit Inquiry</button>
     </form>
   </section>  <footer>
-    <p>© 2025 Shree Kumawat Stone Industries. All rights reserved.</p>
+    <p>&copy; 2025 Shree Kumawat Stone Industries. All rights reserved.</p>
   </footer>
-</body>
-</html>
+</body></html>
