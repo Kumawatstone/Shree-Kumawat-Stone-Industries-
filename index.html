@@ -44,12 +44,11 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
-
 .hero {
-  background-image: url('kota-stone-bg.jpg'); /* Replace with your background image path */
+  background-image: url('kota-stone-bg.jpg'); /* Replace with your actual image path */
   background-size: cover;
   background-position: center;
-  height: 400px;
+  height: 400px; /* Adjust height as needed */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,7 +63,23 @@ nav a:hover {
   align-items: center;
   justify-content: center;
 }
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+  z-index: 1;
+}
 
+.hero .container {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+}
 .hero h1 {
   color: #fff;
   font-size: 2.5rem;
